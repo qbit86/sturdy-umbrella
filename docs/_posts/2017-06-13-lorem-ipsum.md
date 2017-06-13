@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Lorem Ipsum!"
 ---
 {{ site.time }}
