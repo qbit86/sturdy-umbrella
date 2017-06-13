@@ -1,2 +1,3 @@
-# sturdy-umbrella
-Playground for GitHub Pages.
+# Sturdy Umbrella
+
+Playground for GitHub Pages and Jekyll.
