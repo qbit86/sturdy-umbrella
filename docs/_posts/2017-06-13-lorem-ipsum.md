@@ -12,4 +12,5 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 Writing posts: <https://jekyllrb.com/docs/posts/>
 
-Tips: <{{ site.baseurl }}{% post_url 2017-06-14-tips %}>
+Linking to posts: <https://jekyllrb.com/docs/templates/#linking-to-posts>  
+[Tips]({{ site.baseurl }}{% post_url 2017-06-14-tips %}): <{{ site.url }}{{ site.baseurl }}{% post_url 2017-06-14-tips %}>
