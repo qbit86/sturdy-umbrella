@@ -1,4 +1,11 @@
 baseurl: /sturdy-umbrella
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 markdown: kramdown
 title: "Sturdy Umbrella"
 theme: jekyll-theme-modernist
