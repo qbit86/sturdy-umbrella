@@ -16,3 +16,14 @@ $$
 Writing posts: <https://jekyllrb.com/docs/posts/>  
 Linking to posts: <https://jekyllrb.com/docs/templates/#linking-to-posts>  
 [Tips]({{ site.baseurl }}{% post_url 2017-06-14-tips %}): <{{ site.url }}{{ site.baseurl }}{% post_url 2017-06-14-tips %}>
+
+In gravida dictum vulputate. Nunc quam lectus, imperdiet ac eros scelerisque, porttitor vulputate lectus. Morbi vitae justo orci. Aliquam hendrerit vitae arcu ac pretium. Morbi varius orci ac egestas efficitur. Mauris a pretium nisi.
+
+<script src="{{ site.baseurl }}{% link /assets/js/example.js %}" type="text/javascript">
+</script>
+
+Cras ac lacinia magna. Praesent lacinia, dui eu dapibus rutrum, diam arcu imperdiet massa, vel pulvinar justo metus quis dui. Pellentesque sollicitudin id ex ut vehicula. Phasellus posuere dolor auctor lorem varius volutpat. Sed interdum ac sem et tincidunt.
+
+<button onclick="foobar()">Test</button>
+
+Praesent gravida porta bibendum. Sed eget egestas nulla, a fringilla mauris. Aenean rhoncus, augue ac lacinia blandit, nulla metus suscipit tellus, id auctor tortor purus quis sem. Pellentesque vel eros venenatis, tincidunt sem cursus, faucibus ipsum. Sed tincidunt tempor ex, nec viverra est sagittis non. Aenean faucibus velit eu lorem gravida efficitur.
