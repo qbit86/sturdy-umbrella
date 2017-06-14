@@ -24,6 +24,6 @@ In gravida dictum vulputate. Nunc quam lectus, imperdiet ac eros scelerisque, po
 
 Cras ac lacinia magna. Praesent lacinia, dui eu dapibus rutrum, diam arcu imperdiet massa, vel pulvinar justo metus quis dui. Pellentesque sollicitudin id ex ut vehicula. Phasellus posuere dolor auctor lorem varius volutpat. Sed interdum ac sem et tincidunt.
 
-<button onclick="foobar()">Test</button>
+<button onclick="foobar('demo')">Test</button>
 
-Praesent gravida porta bibendum. Sed eget egestas nulla, a fringilla mauris. Aenean rhoncus, augue ac lacinia blandit, nulla metus suscipit tellus, id auctor tortor purus quis sem. Pellentesque vel eros venenatis, tincidunt sem cursus, faucibus ipsum. Sed tincidunt tempor ex, nec viverra est sagittis non. Aenean faucibus velit eu lorem gravida efficitur.
+Praesent{: id="demo"} gravida porta bibendum{: style="font-weight: bold"}. Sed eget egestas nulla, a fringilla mauris. Aenean rhoncus, augue ac lacinia blandit, nulla metus suscipit tellus, id auctor tortor purus quis sem. Pellentesque vel eros venenatis, tincidunt sem cursus, faucibus ipsum. Sed tincidunt tempor ex, nec viverra est sagittis non. Aenean faucibus velit eu lorem gravida efficitur.
