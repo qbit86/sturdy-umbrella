@@ -26,4 +26,4 @@ Cras ac lacinia magna. Praesent lacinia, dui eu dapibus rutrum, diam arcu imperd
 
 <button onclick="foobar('demo')">Test</button>
 
-Praesent{: id="demo"} gravida porta bibendum{: style="font-weight: bold"}. Sed eget egestas nulla, a fringilla mauris. Aenean rhoncus, augue ac lacinia blandit, nulla metus suscipit tellus, id auctor tortor purus quis sem. Pellentesque vel eros venenatis, tincidunt sem cursus, faucibus ipsum. Sed tincidunt tempor ex, nec viverra est sagittis non. Aenean faucibus velit eu lorem gravida efficitur.
+<span id="demo">Praesent gravida</span> porta bibendum. Sed eget egestas nulla, a fringilla mauris. Aenean rhoncus, augue ac lacinia blandit, nulla metus suscipit tellus, id auctor tortor purus quis sem. Pellentesque vel eros venenatis, tincidunt sem cursus, faucibus ipsum. Sed tincidunt tempor ex, nec viverra est sagittis non. Aenean faucibus velit eu lorem gravida efficitur.
