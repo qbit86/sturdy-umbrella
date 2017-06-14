@@ -1,4 +1,5 @@
 ---
+comments: true
 title: "Lorem Ipsum!"
 ---
 {{ site.time }}
