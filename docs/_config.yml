@@ -1,3 +1,4 @@
+baseurl: /sturdy-umbrella
 markdown: kramdown
 title: "Sturdy Umbrella"
 theme: jekyll-theme-modernist
