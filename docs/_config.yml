@@ -7,5 +7,6 @@ defaults:
     values:
       layout: "post"
 markdown: kramdown
+show_drafts: true
 title: "Sturdy Umbrella"
 theme: jekyll-theme-modernist
