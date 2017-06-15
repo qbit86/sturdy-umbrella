@@ -12,7 +12,7 @@ Drafts:
 
 Posts:
 {% for post in site.posts %}
-{% if !post.draft %}
+{% unless post.draft %}
 + {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url | relative_url }})  
-{% endif %}
+{% endunless %}
 {% endfor %}
