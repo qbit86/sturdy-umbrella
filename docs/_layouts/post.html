@@ -18,10 +18,9 @@
   <body>
     <div class="wrapper">
       <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
+        <img src="{{ '/assets/img/bandit-192.png' | relative_url }}" style="float:left;width:96px;height:96px;" />
         <h1>{{ page.title | default: site.github.repository_name }}</h1>
-        {% if site.description or site.github.project_tagline %}
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
-        {% endif %}
+        {% if site.description or site.github.project_tagline %}<p>{{ site.description | default: site.github.project_tagline }}</p>{% endif %}
       </header>
       <section>
 
