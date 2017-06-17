@@ -8,9 +8,7 @@ function cartesianToPolar(c) {
   const p = { r: r, φ: φ };
   return p;
 }
-</script>
 
-<script type="text/javascript">
 function cartesianToPolarString(input) {
   const values = input.split(',', 2).map(parseFloat);
   const c = { x: values[0], y: values[1] };

@@ -17,7 +17,7 @@ $$
 
 Writing posts: <https://jekyllrb.com/docs/posts/>  
 Linking to posts: <https://jekyllrb.com/docs/templates/#linking-to-posts>  
-[Tips]({{ site.baseurl }}{% post_url 2017-06-14-tips %}): <{{ site.url }}{{ site.baseurl }}{% post_url 2017-06-14-tips %}>
+[JavaScript example]({{ site.baseurl }}{% post_url 2017-06-17-javascript %}): <{{ site.url }}{{ site.baseurl }}{% post_url 2017-06-17-javascript %}>
 
 In gravida dictum vulputate. Nunc quam lectus, imperdiet ac eros scelerisque, porttitor vulputate lectus. Morbi vitae justo orci. Aliquam hendrerit vitae arcu ac pretium. Morbi varius orci ac egestas efficitur. Mauris a pretium nisi.
 
