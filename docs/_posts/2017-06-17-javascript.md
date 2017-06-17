@@ -1,7 +1,6 @@
 ---
 title: "JavaScript"
 ---
-
 <script type="text/javascript">
 function cartesianToPolar(c) {
   const r = Math.hypot(c.x, c.y);
