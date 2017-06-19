@@ -6,7 +6,7 @@ Last updated:
 {{ site.time | date: "%F %R" }}
 <span style="float:right"><a href="{{site.github.repository_url | append: '/tree/master/docs' }}">{{ site.github.build_revision | slice: 0, 7 }}</a></span>
 
-Link to current page source: <{{site.github.repository_url | append: '/blob/master/docs/_posts/' | append: page.id | append '.md' }}>
+Link to current page source: <{{ site.github.repository_url | append: '/blob/master/docs/_posts/' | append: page.id | append: '.md' }}>
 
 Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
