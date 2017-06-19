@@ -2,7 +2,9 @@
 comments: true
 title: "Lorem Ipsum!"
 ---
-Last updated: {{ site.time }} {{ site.github.build_revision }}
+Last updated: 
+{{ site.time | date: "%F %R" }}
+<span style="float:right"><a href="{{site.github.repository_url | append: '/tree/master/docs' }}">{{ site.github.build_revision | slice: 0, 7 }}</a></span>
 
 Link to current page source: <{{site.github.repository_url | append: '/blob/master/docs/_posts/' | append: page.id | append '.md' }}>
 
