@@ -1,7 +1,7 @@
 ---
 title: "Table of Contents"
 ---
-Last updated: {{ site.time }}  {{ site.github.build_revision }}
+Last updated: {{ site.time }}  {{ site.github.build_revision | slice: 0, 7 }}
 
 Drafts:
 {% for post in site.posts %}
