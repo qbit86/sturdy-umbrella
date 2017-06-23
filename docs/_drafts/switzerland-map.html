@@ -4,19 +4,22 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Switzerland Map</title>
-        <script>
-            function onGetMapUrl(inputId, outputId) {
-
-            }
-        </script>
     </head>
     <body>
+        <script type="text/javascript">
+            function onGetMapUrl(inputId, outputId) {
+                const input = document.getElementById(inputId);
+                const output = document.getElementById(outputId);
+                output.setAttribute("title", input.value);
+            }
+        </script>
+
         <p>
-            <input type="text" id="input" /><br />
+            <input id="input" type="text" /><br />
             <button onclick="onGetMapUrl('input', 'output')">Get</button>
         </p>
         <p>
-            <img alt="Switzerland" src="http://maps.google.com/maps/api/staticmap?center=Switzerland&zoom=7&size=512x256" /><br />
+            <img id="output" alt="Switzerland" src="http://maps.google.com/maps/api/staticmap?center=Switzerland&zoom=7&size=512x256" /><br />
         </p>
     </body>
 </html>
