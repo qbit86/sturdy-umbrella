@@ -10,7 +10,8 @@
             function onGetMapUrl(inputId, outputId) {
                 const input = document.getElementById(inputId);
                 const output = document.getElementById(outputId);
-                output.setAttribute("title", input.value);
+                const location = input.value;
+                output.setAttribute("title", location);
             }
         </script>
 
