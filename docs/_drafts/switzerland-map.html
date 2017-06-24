@@ -7,10 +7,7 @@
     </head>
     <body>
         <script type="text/javascript">
-            function onGetMapUrl(inputId, outputId) {
-                const input = document.getElementById(inputId);
-                const output = document.getElementById(outputId);
-                const location = input.value;
+            function getUrl(location) {
                 const baseUrl = "http://maps.google.com/maps/api/staticmap";
                 const locationParameters = [
                     "center=Switzerland",
@@ -36,21 +33,38 @@
                 const featureParameters = markerParameters.concat(styleParameters);
                 const allParameters = locationParameters.concat(mapParameters, featureParameters);
                 const parameterString = allParameters.join("&");
-                const rawUrl = baseUrl + "?" + parameterString;
-                const url = encodeURI(rawUrl);
+                const url = baseUrl + "?" + parameterString;
+                const result = encodeURI(url);
+                return result;
+            }
+
+            function onGetMap(inputId, outputImageId, outputLinkId) {
+                const input = document.getElementById(inputId);
+                const location = input.value;
+
+                const url = getUrl(location);
+
+                const outputImage = document.getElementById(outputImageId);
                 if (location.length > 0) {
-                    output.setAttribute("title", location);
+                    outputImage.setAttribute("title", location);
                 }
-                output.setAttribute("src", url);
+                outputImage.setAttribute("src", url);
+
+                const outputLink = document.getElementById(outputLinkId);
+                outputLink.setAttribute("href", url);
+                outputLink.textContent = url;
             }
         </script>
 
         <p>
             <input id="input" type="text" /><br />
-            <button onclick="onGetMapUrl('input', 'output')">Get</button>
+            <button onclick="onGetMap('input', 'outputImage', 'outputLink')">Get Map</button>
         </p>
         <p>
-            <img id="output" alt="Switzerland" src="http://maps.google.com/maps/api/staticmap?center=Switzerland&zoom=7&size=512x256" /><br />
+            <img id="outputImage" alt="Switzerland" src="http://maps.google.com/maps/api/staticmap?center=Switzerland&zoom=7&size=512x256" /><br />
+        </p>
+        <p>
+            <a id="outputLink" href="http://maps.google.com/maps/api/staticmap?center=Switzerland&zoom=7&size=512x256">http://maps.google.com/maps/api/staticmap?center=Switzerland&zoom=7&size=512x256</a>
         </p>
     </body>
 </html>
