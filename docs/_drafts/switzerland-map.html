@@ -11,16 +11,25 @@
                 const input = document.getElementById(inputId);
                 const output = document.getElementById(outputId);
                 const location = input.value;
-                const baseUrl = "http://maps.google.com/maps/api/staticmap"
-                    + "?center=Switzerland"
-                    + "&zoom=7"
-                    + "&size=512x256"
-                    + "&maptype=roadmap"
-                    + "&region=CH";
-                const labels = "&style=feature:all|element:labels|visibility:off"
-                    + "&style=feature:administrative.locality|element:labels|visibility:on";
-                const markers = (location.length > 0) ? ("&markers=color:red|label:" + location.charAt(0) +  "|" + location) : "";
-                const rawUrl = baseUrl + labels + markers;
+                const baseUrl = "http://maps.google.com/maps/api/staticmap";
+                const locationParameters = [
+                    "center=Switzerland",
+                    "zoom=7"
+                ];
+                const mapParameters = [
+                    "size=512x256",
+                    "maptype=roadmap",
+                    "region=CH"
+                ];
+                const markerParameters = (location.length > 0) ? [ "markers=color:red|label:" + location.charAt(0) +  "|" + location ] : [];
+                const styleParameters = [
+                    "style=feature:all|element:labels|visibility:off",
+                    "style=feature:administrative.locality|element:labels|visibility:on"
+                ];
+                const featureParameters = markerParameters.concat(styleParameters);
+                const allParameters = locationParameters.concat(mapParameters, featureParameters);
+                const parameterString = allParameters.join("&");
+                const rawUrl = baseUrl + "?" + parameterString;
                 const url = encodeURI(rawUrl);
                 if (location.length > 0) {
                     output.setAttribute("title", location);
