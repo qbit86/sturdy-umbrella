@@ -11,9 +11,15 @@
                 const input = document.getElementById(inputId);
                 const output = document.getElementById(outputId);
                 const location = input.value;
-                let rawUrl = "http://maps.google.com/maps/api/staticmap?center=Switzerland&zoom=7&size=512x256"
+                const baseUrl = "http://maps.google.com/maps/api/staticmap"
+                    + "?center=Switzerland"
+                    + "&zoom=7"
+                    + "&size=512x256"
                     + "&maptype=roadmap"
                     + "&region=CH";
+                const labels = "&style=feature:all|element:labels|visibility:off"
+                    + "&feature:administrative.locality|element:labels|visibility:on";
+                const rawUrl = baseUrl + labels;
                 const url = encodeURI(rawUrl);
                 output.setAttribute("title", location);
                 output.setAttribute("src", url);
