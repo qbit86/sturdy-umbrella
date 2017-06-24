@@ -22,10 +22,17 @@
                     "region=CH"
                 ];
                 const markerParameters = (location.length > 0) ? [ "markers=color:red|label:" + location.charAt(0) +  "|" + location ] : [];
-                const styleParameters = [
-                    "style=feature:all|element:labels|visibility:off",
-                    "style=feature:administrative.locality|element:labels|visibility:on"
+                const styles = [
+                    "feature:all|element:geometry|visibility:off",
+                    "feature:administrative.country|element:geometry|visibility:on",
+                    "feature:landscape.natural|element:geometry|visibility:on",
+                    "feature:landscape.natural.terrain|element:geometry|visibility:on",
+                    "feature:water|element:geometry|visibility:on",
+
+                    "feature:all|element:labels|visibility:off",
+                    "feature:administrative.locality|element:labels|visibility:on"
                 ];
+                const styleParameters = styles.map(s => "style=" + s);
                 const featureParameters = markerParameters.concat(styleParameters);
                 const allParameters = locationParameters.concat(mapParameters, featureParameters);
                 const parameterString = allParameters.join("&");
