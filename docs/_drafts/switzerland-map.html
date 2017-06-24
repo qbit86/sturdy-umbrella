@@ -18,10 +18,13 @@
                     + "&maptype=roadmap"
                     + "&region=CH";
                 const labels = "&style=feature:all|element:labels|visibility:off"
-                    + "&feature:administrative.locality|element:labels|visibility:on";
-                const rawUrl = baseUrl + labels;
+                    + "&style=feature:administrative.locality|element:labels|visibility:on";
+                const markers = (location.length > 0) ? ("&markers=color:red|label:" + location.charAt(0) +  "|" + location) : "";
+                const rawUrl = baseUrl + labels + markers;
                 const url = encodeURI(rawUrl);
-                output.setAttribute("title", location);
+                if (location.length > 0) {
+                    output.setAttribute("title", location);
+                }
                 output.setAttribute("src", url);
             }
         </script>
