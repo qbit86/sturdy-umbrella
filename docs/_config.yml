@@ -1,13 +1,14 @@
 baseurl: /sturdy-umbrella
-comments: true
 defaults:
   -
     scope:
       path: ""
       type: "posts"
     values:
+      comments: true
       layout: "post"
 markdown: kramdown
+show_downloads: false
 show_drafts: true
 title: "Sturdy Umbrella"
 theme: jekyll-theme-modernist
