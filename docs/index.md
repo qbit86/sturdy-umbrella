@@ -1,4 +1,5 @@
 ---
+layout: index
 title: "Table of Contents"
 ---
 Last updated: {{ site.time | date: "%F %R" }}
