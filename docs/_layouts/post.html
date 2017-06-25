@@ -24,7 +24,7 @@
       <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
         <img src="{{ page.avatar | default: '/assets/img/avatar/bandit-192.png' | relative_url }}" style="float:left;width:48px;height:48px;margin:0px 4px 0px 0px" />
         <h1>{{ page.title | default: site.github.repository_name }}</h1>
-        <p>{% if page.summary %}{{ page.summary }}{% endif %}</p>
+        <p>{% if page.summary %}{{ page.summary }}{% else %}&nbsp;{% endif %}</p>
       </header>
       <section>
 

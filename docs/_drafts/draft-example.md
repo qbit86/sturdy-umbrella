@@ -1,4 +1,5 @@
 ---
+comments: false
 title: "Draft Example"
 ---
 GitHub Pages Project Pages - Relative Links Fail: <https://github.com/jekyll/jekyll/issues/332>  
