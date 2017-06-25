@@ -10,7 +10,7 @@ Link to current page source: <{{ site.github.repository_url | append: '/blob/mas
 
 Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-![Bandit]({{ site.baseurl }}{% link /assets/img/bandit-192.png %})
+![Bandit]({{ site.baseurl }}{% link /assets/img/avatar/helmet-with-white-cross-120.png %})
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat _nulla pariatur_. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
