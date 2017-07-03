@@ -10,13 +10,13 @@
             function getUrl(location) {
                 const baseUrl = "http://maps.google.com/maps/api/staticmap";
                 const locationParameters = [
-                    "center=Switzerland",
-                    "zoom=7"
+                    "center=Italy",
+                    "zoom=5"
                 ];
                 const mapParameters = [
                     "size=512x256",
                     "maptype=roadmap",
-                    "region=CH"
+                    "region=IT"
                 ];
                 const markerParameters = (location.length > 0) ? [ "markers=color:red|label:" + location.charAt(0) +  "|" + location ] : [];
                 const styles = [
