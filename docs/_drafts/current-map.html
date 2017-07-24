@@ -10,13 +10,13 @@
             function getUrl(location) {
                 const baseUrl = "http://maps.google.com/maps/api/staticmap";
                 const locationParameters = [
-                    "center=Italy",
-                    "zoom=5"
+                    "center=Switzerland",
+                    "zoom=7"
                 ];
                 const mapParameters = [
                     "size=512x256",
                     "maptype=roadmap",
-                    "region=IT"
+                    "region=CH"
                 ];
                 const markerParameters = (location.length > 0) ? [ "markers=color:red|label:" + location.charAt(0) +  "|" + location ] : [];
                 const styles = [
@@ -65,16 +65,6 @@
         </p>
         <p style="max-width:512px">
             <a id="outputLink" href="http://maps.google.com/maps/api/staticmap?center=0,0&zoom=1&size=512x256" style="overflow-wrap:break-word">http://maps.google.com/maps/api/staticmap?center=0,0&zoom=1&size=512x256</a>
-        </p>
-
-        <hr />
-
-        <p>
-            <img src="http://maps.google.com/maps/api/staticmap?center=Istanbul&zoom=5&size=512x256&maptype=roadmap&region=TR&markers=color:red%7Clabel:R%7CIstanbul&style=feature:all%7Celement:geometry%7Cvisibility:off&style=feature:administrative.country%7Celement:geometry%7Cvisibility:on&style=feature:landscape.natural%7Celement:geometry%7Cvisibility:on&style=feature:landscape.natural.terrain%7Celement:geometry%7Cvisibility:on&style=feature:water%7Celement:geometry%7Cvisibility:on&style=feature:all%7Celement:labels%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels%7Cvisibility:on" />
-        </p>
-
-        <p>
-            <img src="http://maps.google.com/maps/api/staticmap?center=Italy&zoom=5&size=512x256&maptype=roadmap&region=IT&markers=color:red%7Clabel:R%7CRome&style=feature:all%7Celement:geometry%7Cvisibility:off&style=feature:administrative.country%7Celement:geometry%7Cvisibility:on&style=feature:landscape.natural%7Celement:geometry%7Cvisibility:on&style=feature:landscape.natural.terrain%7Celement:geometry%7Cvisibility:on&style=feature:water%7Celement:geometry%7Cvisibility:on&style=feature:all%7Celement:labels%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels%7Cvisibility:on" />
         </p>
     </body>
 </html>
